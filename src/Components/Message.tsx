@@ -1,9 +1,9 @@
 interface MessageProps {
-  words: string;
+  name: string;
 }
 
-const Message = ({ words }: MessageProps) => {
-  return <p>{words}</p>;
+const Message = ({ name }: MessageProps) => {
+  return <button onClick={() => console.log(name)}>Hello</button>;
 };
 
 export default Message;

@@ -1,11 +1,11 @@
-import Message from "./Components/Message"
+import Message from "./Components/Message";
 
 const App = () => {
   return (
     <div>
-      <Message words="Welcome!"/>
+      <Message name="Carter" />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
