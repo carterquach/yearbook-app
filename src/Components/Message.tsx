@@ -1,9 +1,18 @@
+import { useEffect } from "react";
+import "../styles/styles.css";
 interface MessageProps {
-  name: string;
+  sayHi: () => void;
 }
 
-const Message = ({ name }: MessageProps) => {
-  return <button onClick={() => console.log(name)}>Hello</button>;
+const Message = ({ sayHi }: MessageProps) => {
+  useEffect(() => {
+    console.log("Welcome!");
+  }, []);
+  return (
+    <button className="btnn" onClick={sayHi}>
+      Click Me!
+    </button>
+  );
 };
 
 export default Message;
